@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/chane/CLionProjects/PSS-Homework2/enums.h
+
+C:/Users/chane/CLionProjects/PSS-Homework2/main.cpp
+iostream
+-
+users.h
+C:/Users/chane/CLionProjects/PSS-Homework2/users.h
+rooms.h
+C:/Users/chane/CLionProjects/PSS-Homework2/rooms.h
+
+C:/Users/chane/CLionProjects/PSS-Homework2/rooms.h
+enums.h
+C:/Users/chane/CLionProjects/PSS-Homework2/enums.h
+users.h
+C:/Users/chane/CLionProjects/PSS-Homework2/users.h
+
+C:/Users/chane/CLionProjects/PSS-Homework2/users.h
+enums.h
+C:/Users/chane/CLionProjects/PSS-Homework2/enums.h
+
