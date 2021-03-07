@@ -1,3 +1,0 @@
-"C:\Users\chane\AppData\Local\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\BojeSPasi.dir/objects.a
-C:\Users\chane\files\min\mingw32\bin\ar.exe cr CMakeFiles\BojeSPasi.dir/objects.a @CMakeFiles\BojeSPasi.dir\objects1.rsp
-C:\Users\chane\files\min\mingw32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\BojeSPasi.dir/objects.a -Wl,--no-whole-archive  -o BojeSPasi.exe -Wl,--out-implib,libBojeSPasi.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\BojeSPasi.dir\linklibs.rsp
