@@ -3,7 +3,9 @@
 #include "enums.h"
 using namespace std;
 
-
+/* basic class for users. All person<that are not related to university will be of this type
+it has getters that are public and setters that works if it done by admins
+*/
 class person {
 public:
     void setPersonId(person isAdmin,int newId){
@@ -85,7 +87,7 @@ protected:
     persons personType;
     int Id;
 };
-
+// further classes extend person class and get some unique information about perosn with setters and getters
 class Professor: public person{
 public:
     void setTeachingSubject(person isAdmin,subject newSubject){
