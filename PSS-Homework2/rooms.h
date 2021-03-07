@@ -3,7 +3,9 @@
 #include "enums.h"
 #include "users.h"
 using namespace std;
-
+/*
+basic class for rooms, has getters for information
+*/
 class room {
 public:
     int getRoomNumber(){
@@ -24,7 +26,7 @@ protected:
     int roomNumber;
     rooms typeOfRoom;
 };
-
+// further rooms of different types with different conditions for opening them. Mostly depend on access level of person
 class ClassRoom: public room{
 public:
     void tryToOpen(person opener){
@@ -75,6 +77,7 @@ public:
         typeOfRoom = conferenceRoom;
     }
 };
+//Cabinet connected with person's Id
 class Cabinet: public room{
 public:
     void changeOwner(person isAdmin,person newOwner){
@@ -101,6 +104,7 @@ public:
 protected:
     int ownerId;
 };
+// Director's cabinet can be opend only by director or admin
 class DirectorCabinet: public room{
 public:
     void tryToOpen(person opener){
