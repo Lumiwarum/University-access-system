@@ -3,7 +3,12 @@
 #include "rooms.h"
 using namespace std;
 
-
+/* University access system
+ *
+ * @author Kirilin Anton
+ * @version 1.0
+ * @since 07.03.2021
+ */
 int main() {
     cout <<"This is an example of system work, it's show how objects are interact with each other."<<endl;
     cout <<"For more information check Readme file";
@@ -132,4 +137,3 @@ director1.setAge(admin1,45);
 cout <<"new director's age "<<director1.getAge()<<endl;
     return 0;
 }
-
