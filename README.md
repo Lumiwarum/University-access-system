@@ -13,9 +13,9 @@ Version of c++20 were used.
 
 To open it in Clion press File, than Open... and find this directory. Choose it and open.
 
-![pictures/Untitled.png](pictures/Untitled.png)
+![pictures/Untitled.png](README/pictures/Untitled.png)
 
-![pictures/Untitled%201.png](pictures/Untitled%201.png)
+![pictures/Untitled%201.png](README/pictures/Untitled%201.png)
 
 ## Generic Ideas of program
 
