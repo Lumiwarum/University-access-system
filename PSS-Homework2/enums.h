@@ -1,9 +1,8 @@
 #ifndef BOJESPASI_ENUMS_H
 #define BOJESPASI_ENUMS_H
-/*
-this file contain enums for other files
-*/
+
 enum persons{
+    guest,
     professor,
     student,
     employee,
@@ -12,6 +11,7 @@ enum persons{
 };
 enum levelAccess{
     noLevel,
+    blue,
     green,
     yellow,
     red

@@ -3,9 +3,7 @@
 #include "enums.h"
 using namespace std;
 
-/* basic class for users. All person<that are not related to university will be of this type
-it has getters that are public and setters that works if it done by admins
-*/
+
 class person {
 public:
     void setPersonId(person isAdmin,int newId){
@@ -73,11 +71,11 @@ public:
     int getId(){
         return Id;
     }
-    person(string Name,string Surname,int id){
+    person(string Name,string Surname){
         levelOfAccess=noLevel;
         firstName=Name;
         lastName=Surname;
-        Id=id;
+        Id=newId++;
     }
 private:
 protected:
@@ -86,8 +84,21 @@ protected:
     string lastName;
     persons personType;
     int Id;
+    inline static int newId=0;
 };
-// further classes extend person class and get some unique information about perosn with setters and getters
+
+class Guest: public person{
+public:
+    Guest(string Name,string Surname,int money): person (Name,Surname){
+        levelOfAccess=blue;
+        personType=guest;
+        amountOfMoney=money;
+    }
+
+private:
+    int amountOfMoney;
+};
+
 class Professor: public person{
 public:
     void setTeachingSubject(person isAdmin,subject newSubject){
@@ -106,13 +117,10 @@ public:
     bool getEngineerSkill(){
         return fluentWithTechnique;
     }
-Professor(string Name,string Surname, int id,bool engineer,subject teaching) : person(Name,Surname,id) {
+Professor(string Name,string Surname,bool engineer,subject teaching) : person(Name,Surname) {
     levelOfAccess=yellow;
     personType=professor;
-    firstName=Name;
-    lastName=Surname;
     fluentWithTechnique=engineer;
-    Id=id;
     teachingSubject=teaching;
 }
 private:
@@ -135,12 +143,9 @@ public:
             cout <<" is not admin and cannot do this operation"<<endl;
         }
     }
-    Student(string Name,string Surname,int id,double averageGrade): person(Name,Surname,id){
+    Student(string Name,string Surname,double averageGrade): person(Name,Surname){
         levelOfAccess=green;
         personType=student;
-        firstName=Name;
-        lastName=Surname;
-        Id=id;
         this->averageGrade=averageGrade;
     }
 
@@ -163,12 +168,9 @@ public:
     subject getStudySubject(){
         return studySubject;
     }
-    Employee(string Name,string Surname,int id,subject studying): person(Name,Surname,id){
+    Employee(string Name,string Surname,subject studying): person(Name,Surname){
         levelOfAccess=yellow;
         personType=employee;
-        firstName=Name;
-        lastName=Surname;
-        Id=id;
         studySubject=studying;
     }
 
@@ -191,12 +193,9 @@ public:
             cout <<" is not admin and cannot do this operation"<<endl;
         }
     }
-    Director(string Name,string Surname,int id,int age): person(Name,Surname,id){
+    Director(string Name,string Surname,int age): person(Name,Surname){
         levelOfAccess=red;
         personType=director;
-        firstName=Name;
-        lastName=Surname;
-        Id=id;
         this->age=age;
     }
 
@@ -212,11 +211,9 @@ public:
     void setSalary(int money){
         salary=money;
     }
-    Admin(string Name,string Surname,int id,int money): person(Name,Surname,id){
+    Admin(string Name,string Surname,int money): person(Name,Surname){
         levelOfAccess=red;
         personType=admin;
-        firstName=Name;
-        lastName=Surname;
         salary=money;
     }
 
