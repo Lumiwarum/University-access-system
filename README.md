@@ -2,7 +2,7 @@
 
 This program is implementation of an access system at the university. It has example of work at the main method.
 
-## A version of the program 1.0
+## A version of the program 1.1
 
 ### how to run
 
@@ -47,6 +47,7 @@ in rooms.h all classes have getters and one of them has a setter, that works onl
 
 each class of persons has their own level of access that can be changed by an admin.
 
+- guest - blue
 - person - noLevel
 - student- green
 - employee - yellow
@@ -57,8 +58,8 @@ each class of persons has their own level of access that can be changed by an ad
 each room has their own requirements for accessing it
 
 - classroom - green+
-- lecture room - green+
-- conference room - yellow+
+- lecture room - green+/blue if it's on the first floor
+- conference room - yellow+/blue if it's on the first floor
 - cabinet - owner's id
 - director cabinet - director user type
 
@@ -78,6 +79,8 @@ In main I create several users and rooms. Than show example of working system:
 4. Guest example
 5. Admins features
 6. special information
+7. examples with special access to the room
+8. emergency situation example
 
 In guest example I show how admins can provide new level of access to specific person.
 
