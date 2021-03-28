@@ -65,6 +65,8 @@ each room has their own requirements for accessing it
 
 for all of them admins have access
 
+Also each room has their own list of persons id, that have access to this room regardless of their access level. Admins can give a person an access to a room or remove it.
+
 ---
 
 admins can grant new level of access to any user, change their information such as name,surname,id e.t.c. also admins can set new owner to a cabinet
@@ -83,9 +85,12 @@ In main I create several users and rooms. Than show example of working system:
 8. emergency situation example
 
 In guest example I show how admins can provide new level of access to specific person.
+Edit: now guest is a special type of persons, that have a blue level of access.
 
 In admin features I show what will happen if non-admin will try to use setters, also shows another example of admins feature of changing information.
 
 In special information I show which specific information you can get from a user and how it can be changed.
+
+In examples with special access to the room I provide a few examples how admins can give acceess for some person to a praticular room without changing their access level
 
 Everything is printed in the console.
