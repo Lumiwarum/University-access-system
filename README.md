@@ -17,7 +17,7 @@ To open it in Clion press File, than Open... and find this directory. Choose it 
 
 ![pictures/Untitled%201.png](README/pictures/Untitled%201.png)
 
-## Generic Ideas of program
+## General Ideas of program
 
 Program mainly consist of 4 file:
 
@@ -67,9 +67,10 @@ for all of them admins have access
 
 Also each room has their own list of persons id, that have access to this room regardless of their access level. Admins can give a person an access to a room or remove it.
 
----
-
 admins can grant new level of access to any user, change their information such as name,surname,id e.t.c. also admins can set new owner to a cabinet
+
+
+---
 
 ## Particular example in main
 
